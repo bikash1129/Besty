@@ -1,0 +1,62 @@
+body {
+  background: linear-gradient(to left,rgb(8, 220, 248),rgb(254, 13, 214));
+  background-repeat: no-repeat;
+}
+
+
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+  }
+h1 {
+  color : rgb(5, 219, 238);
+  animation: fadeIn 2s ease-out forwards; /* Animation name, duration, timing function */
+    opacity: 0;
+}
+@keyframes fadeIn {
+  0% {
+      opacity: 0; /* Start completely transparent */
+  }
+  100% {
+      opacity: 1; /* Fully visible */
+  }
+}
+h1:hover{
+ color: rgb(2, 131, 230)
+}
+h3{
+  color: rgb(0, 0, 0);
+  text-align: right;
+  margin-right: 20px;
+  display: block;
+  animation: slideIn 1s ease-in-out;
+}
+
+@keyframes slideIn {
+  0% {
+      transform: translateX(100%); /* Start off-screen to the right */
+      opacity: 0; /* Start completely transparent */
+  }
+  100% {
+      transform: translateX(0); /* Move to original position */
+      opacity: 1; /* Fully visible */
+  }
+}
+  .topnav a {
+    float: left;
+    color: #f2f2f2ab;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #15d179;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #18ce8b;
+    color: white;
+  }
